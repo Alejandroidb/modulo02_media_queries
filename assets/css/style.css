@@ -32,6 +32,12 @@ nav {
 .title i {
   padding-right: 1rem;
 }
+.menu-list {
+    display: none;
+}
+.menu-list li {
+    list-style: none;
+}
 section {
   grid-area: search;
   background-color: gray;
