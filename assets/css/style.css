@@ -117,3 +117,38 @@ footer {
   align-items: center;
   color: white;
 }
+@media (min-width:992px) {
+    .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 9fr 1fr;
+  grid-template-areas:
+    "navbar search search search search"
+    "navbar main main main main"
+    "navbar main main main main"
+    "footer main main main main";
+    height: 100vh;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90vh;
+    }
+    .footer {
+        height: 10vh;
+    }
+section {
+    height: 10vh;
+}
+main {
+    height: 90vh;
+}
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-icon {
+        display: none;
+    }
+}
