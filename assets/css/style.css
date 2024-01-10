@@ -73,16 +73,8 @@ main {
     margin: 10px;
     width: 18rem;
 }
-.card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.card-info p {
-    margin-bottom: 1rem;
-}
-.card-info button {
+
+.card button {
     background-color: blue;
     padding: 16px 30px;
     border-radius: 5px;
@@ -92,15 +84,16 @@ main {
     height: 200px;
     width: 200px;
 }
-.desktop {
+.hidden {
     display: none;
 }
-.paging ul {
+ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 }
-.paging li {
+ul li {
     list-style: none;
     border: solid 1px gray;
     padding: 10px;
@@ -120,13 +113,13 @@ footer {
 @media (min-width:992px) {
     .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 9fr;
   grid-template-rows: 1fr 1fr 9fr 1fr;
   grid-template-areas:
-    "navbar search search search search"
-    "navbar main main main main"
-    "navbar main main main main"
-    "footer main main main main";
+    "navbar search"
+    "navbar main"
+    "navbar main"
+    "footer main";
     height: 100vh;
     }
     .navbar {
@@ -135,15 +128,6 @@ footer {
         justify-content: space-around;
         height: 90vh;
     }
-    .footer {
-        height: 10vh;
-    }
-section {
-    height: 10vh;
-}
-main {
-    height: 90vh;
-}
     .menu-list {
         display: flex;
         flex-direction: column;
@@ -151,4 +135,18 @@ main {
     .menu-icon {
         display: none;
     }
+    .grid-cards {
+        justify-content: space-between;
+    }
+.card-index {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    height: 18.5rem;
+}
+}
 }
