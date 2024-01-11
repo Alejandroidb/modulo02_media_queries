@@ -167,4 +167,7 @@ footer {
     width: 12rem;
     height: 10rem;
   }
+  footer {
+    text-align: center;
+  }
 }
